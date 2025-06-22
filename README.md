@@ -56,12 +56,16 @@ Este projeto utiliza um sensor ultrassônico (HC-SR04) e um servo motor para cri
 
 Abaixo, imagens demonstrando o funcionamento da cancela automática com sensor de proximidade:
 
-### 🔒 Cancela fechada (posição inicial)
-![Cancela Fechada](https://github.com/thaigalhaes/Cancela-Eletr-nica/blob/main/Cancela%20fechada%20.jpg)
-
-### 🔓 Cancela aberta (com detecção de presença)
-![Cancela Aberta](https://github.com/thaigalhaes/Cancela-Eletr-nica/blob/main/Cancela%20aberta.jpg)
-
+<table>
+  <tr>
+    <td align="center"><strong>🔒 Cancela Fechada</strong></td>
+    <td align="center"><strong>🔓 Cancela Aberta</strong></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/thaigalhaes/Cancela-Eletr-nica/blob/main/Cancela%20fechada%20.jpg" width="200"/></td>
+    <td><img src="https://github.com/thaigalhaes/Cancela-Eletr-nica/blob/main/Cancela%20aberta.jpg" width="200"/></td>
+  </tr>
+</table>
 
 
 
