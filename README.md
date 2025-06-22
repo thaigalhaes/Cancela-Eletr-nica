@@ -1,4 +1,4 @@
-# Abertura Automática com Sensor Ultrassônico e Servo Motor
+# Cancela Eletrônica com Sensor Ultrassônico e Servo Motor
 
 Este projeto utiliza um sensor ultrassônico (HC-SR04) e um servo motor para criar um sistema de abertura automática, ideal para portas, tampas ou sistemas de interação sem toque. Quando um objeto ou pessoa se aproxima do sensor a uma distância igual ou inferior a 5 cm, o servo é acionado, simulando a abertura automática.
 
