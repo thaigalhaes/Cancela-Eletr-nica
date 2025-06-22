@@ -1,6 +1,6 @@
 # Cancela Eletrônica com Sensor Ultrassônico e Servo Motor
 
-Este projeto utiliza um sensor ultrassônico (HC-SR04) e um servo motor para controlar a abertura e o fechamento automático de uma cancela eletrônica. Ideal para aplicações como protótipos de portões de estacionamento, sistemas de controle de acesso ou entrada automatizada.
+Este projeto utiliza um **sensor ultrassônico (HC-SR04)** e um **servo motor** para controlar a abertura e o fechamento automático de uma **cancela eletrônica**. Ideal para aplicações como protótipos de portões de estacionamento, sistemas de controle de acesso ou entrada automatizada.
 
 ---
 
