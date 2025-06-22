@@ -1,27 +1,27 @@
 # Cancela Eletrônica com Sensor Ultrassônico e Servo Motor
 
-Este projeto utiliza um sensor ultrassônico (HC-SR04) e um servo motor para criar um sistema de abertura automática, ideal para portas, tampas ou sistemas de interação sem toque. Quando um objeto ou pessoa se aproxima do sensor a uma distância igual ou inferior a 5 cm, o servo é acionado, simulando a abertura automática.
+Este projeto utiliza um sensor ultrassônico (HC-SR04) e um servo motor para controlar a abertura e o fechamento automático de uma cancela eletrônica. Ideal para aplicações como protótipos de portões de estacionamento, sistemas de controle de acesso ou entrada automatizada.
 
 ---
 
 ## Funcionalidades
 
-- Mede a distância de objetos usando um sensor ultrassônico.
-- Aciona o servo motor automaticamente quando detecta proximidade.
-- Retorna à posição inicial após a saída do objeto.
-- Ideal para projetos de automação residencial, acessibilidade ou prototipagem.
+- Mede a distância de um objeto usando um sensor ultrassônico.
+- Abre a cancela automaticamente quando detecta aproximação (≤ 5 cm).
+- Aguarda o objeto se afastar para fechar a cancela novamente.
+- Automatização simples com Arduino, ideal para iniciantes em automação e robótica.
 
 ---
 
 ## Componentes Utilizados
 
-| Componente             | Descrição                |
-|------------------------|--------------------------|
-| Arduino (UNO/Nano/etc) | Placa microcontroladora  |
-| Sensor Ultrassônico    | HC-SR04                  |
-| Servo Motor            | SG90 ou compatível       |
-| Jumpers                | Cabos de conexão         |
-| Protoboard (opcional)  | Montagem do circuito     |
+| Componente             | Descrição                      |
+|------------------------|--------------------------------|
+| Arduino (UNO)          | Placa microcontroladora        |
+| Sensor Ultrassônico    | HC-SR04                        |
+| Servo Motor            | SG90 ou compatível             |
+| Jumpers                | Cabos de conexão               |
+| Protoboard             | Para montagem do circuito      |
 
 ---
 
@@ -37,15 +37,15 @@ Este projeto utiliza um sensor ultrassônico (HC-SR04) e um servo motor para cri
 
 ## Lógica do Código
 
-1. O sensor ultrassônico mede a distância constantemente.
-2. Se a distância for **≤ 5 cm**, o servo gira para 120° (abrindo).
-3. O sistema aguarda até que o objeto se afaste.
-4. Após 3 segundos, o servo retorna para 0° (fechando).
-5. O sistema reinicia o monitoramento.
+1. O sensor lê a distância constantemente.
+2. Quando a distância for menor ou igual a 5 cm, a cancela abre (servo gira para 120°).
+3. Enquanto o objeto ainda estiver próximo, o servo permanece aberto.
+4. Quando o objeto se afasta, após 3 segundos a cancela fecha (servo retorna para 0°).
+5. O sistema volta a monitorar.
 
 ---
 
-## Bibliotecas Utilizadas
+## Bibliotecas Necessárias
 
 - [`Ultrasonic`](https://github.com/ErickSimoes/Ultrasonic)
 - [`Servo`](https://www.arduino.cc/en/reference/servo)
@@ -53,8 +53,6 @@ Este projeto utiliza um sensor ultrassônico (HC-SR04) e um servo motor para cri
 ---
 
 ## Resultado
-
-Abaixo, imagens demonstrando o funcionamento da cancela automática com sensor de proximidade:
 
 <table>
   <tr>
@@ -66,7 +64,3 @@ Abaixo, imagens demonstrando o funcionamento da cancela automática com sensor d
     <td><img src="https://github.com/thaigalhaes/Cancela-Eletr-nica/blob/main/Cancela%20aberta.jpg" width="200"/></td>
   </tr>
 </table>
-
-
-
-
